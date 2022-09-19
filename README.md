@@ -1,8 +1,8 @@
-# SubdKosh
+# SabdhKosh
 
 A minimalist dictionary.
 
-![The San Juan Mountains are beautiful!](/images/subhkosh.png 'San Juan Mountains')
+![The San Juan Mountains are beautiful!](/images/sabdhkosh.png 'San Juan Mountains')
 
 ### Design Inspirations
 

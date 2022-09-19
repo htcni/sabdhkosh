@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+      integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="" />
     <title>SubdhKosh</title>
@@ -13,36 +20,43 @@
       <div class="app-container">
         <div class="top-container">
           <header class="header">
-            <h3>SubhKosh</h3>
+            <h3><span class="fa-solid fa-book"></span>SubhKosh</h3>
           </header>
           <div class="search-container">
             <div class="input-container">
-              <input type="text" nam="word" placeholder="Search for a word." />
+              <input
+                type="text"
+                id="word"
+                name="word"
+                placeholder="Search for a word."
+              />
             </div>
             <div class="btn-container">
-              <button id="speak-btn">Pronounce</button>
+              <button id="speak-btn" disabled>Pronounce</button>
             </div>
           </div>
         </div>
         <div class="bottom-container">
           <div class="meaning-container">
-            <div class="part-of-speech">
-              <p>Noun</p>
+            <div class="speech">
+              <p id="part-of-speech"></p>
             </div>
             <div class="definition-container">
-              <p id="definition">area around a weell</p>
-              <p id="example">This is</p>
+              <div class="definition-header">
+                <p id="phonetic"></p>
+                <p id="searched-word"></p>
+              </div>
+              <!-- <p id="phonetic"></p> -->
+              <p id="definition"></p>
+              <p id="example"></p>
               <div class="synonyms-container">
-                <p>Synonyms</p>
-                <div id="synonyms">
-                  <p>sdsd</p>
-                  <p>sdsd</p>
-                </div>
+                <p>Synonyms:</p>
+                <div id="synonyms"></div>
               </div>
 
               <div class="antonyms-container">
-                <p>Antonyms</p>
-                <div id="" antonyms></div>
+                <p>Antonyms:</p>
+                <div id="antonyms"></div>
               </div>
 
               <p></p>
@@ -53,5 +67,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/utils.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>
